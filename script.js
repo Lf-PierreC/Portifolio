@@ -267,6 +267,7 @@ class skill {
         imgSkill.src = this.icone;
         imgSkill.alt = `${this.nome} Icon`;
         imgSkill.className = 'icon';
+        imgSkill.i
         iconSkill.appendChild(imgSkill);
 
         const nomeSkill = document.createElement('p');
@@ -291,10 +292,8 @@ class skill {
 
 //const seletorContainer = document.getElementById('skills-container');
 
-const skill1 = new skill('CSS',2.7,'');
+const skill1 = new skill('HTML',2.7,'icones/html.png');
 skill1.addSkill();
 
-const skill2 = new skill('CSS',2.7,'');
+const skill2 = new skill('CSS',4,'icones/CSS.png');
 skill2.addSkill();
-
-

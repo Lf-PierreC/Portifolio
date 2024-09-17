@@ -37,6 +37,15 @@ body {
     background-color: white;
     border-radius: 50%;
     margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon {
+    width: 70%;
+    object-fit: cover;
+    padding-top: 13%;
+    scale: 0.75;
 }
 
 .estrela {
