@@ -5,6 +5,11 @@ body {
     padding-bottom: 300px;
 }
 
+body h1 {
+    color: white;
+    text-align: center;
+}
+
 /* SKILLS */
 
 #skills {
@@ -13,6 +18,8 @@ body {
     padding-top: 250px;
     font-family: 'Anton', sans-serif;
     font-size: 20pt;
+    display: inline-flex;
+
 }
 
 #skills-container{
@@ -55,4 +62,8 @@ body {
 
 .nivel {
     display: flex;
+}
+
+.bi {
+    padding-top: 25%;
 }

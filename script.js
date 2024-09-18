@@ -297,3 +297,6 @@ skill1.addSkill();
 
 const skill2 = new skill('CSS',4,'icones/CSS.png');
 skill2.addSkill();
+
+const skill3 = new skill('CSS',4,'icones/CSS.png');
+skill3.addSkill();
