@@ -18,12 +18,14 @@ body h1 {
     padding-top: 250px;
     font-family: 'Anton', sans-serif;
     font-size: 20pt;
-    display: inline-flex;
-
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 #skills-container{
     display: flex;
+    gap: 50px;
 }
 
 #skills p {
@@ -64,6 +66,21 @@ body h1 {
     display: flex;
 }
 
-.bi {
-    padding-top: 25%;
+.seta {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#seta-esquerda, #seta-direita {
+    position: absolute;
+    z-index: 3;
+}
+
+#seta-esquerda {
+    left: 8%;
+}
+
+#seta-direita {
+    right: 8%;
 }
