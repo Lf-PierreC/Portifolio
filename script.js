@@ -298,5 +298,49 @@ skill1.addSkill();
 const skill2 = new skill('CSS',4,'icones/CSS.png');
 skill2.addSkill();
 
-const skill3 = new skill('CSS',4,'icones/CSS.png');
-skill3.addSkill();
+const skill4 = new skill('CSS',4,'icones/CSS.png');
+skill4.addSkill();
+
+const skill5 = new skill('CSS',4,'icones/CSS.png');
+skill5.addSkill();
+
+const skill6 = new skill('CSS',4,'icones/CSS.png');
+skill6.addSkill();
+
+const skill7 = new skill('CSS',4,'icones/CSS.png');
+skill7.addSkill();
+
+const skill8 = new skill('CSS',4,'icones/CSS.png');
+skill8.addSkill();
+
+const skill9 = new skill('CSS',4,'icones/CSS.png');
+skill9.addSkill();
+
+const skill10 = new skill('CSS',4,'icones/CSS.png');
+skill10.addSkill();
+
+/*
+const skillsContainer = document.getElementById('skills-container');
+
+function scrollLeft() {
+  skillsContainer.scrollLeft -= 200;  // Ajuste o valor para controlar a distância do scroll
+}
+
+function scrollRight() {
+  skillsContainer.scrollLeft += 200;
+}
+*/
+
+let currentTranslate = 0;
+
+function scrollRight() {
+    if (currentTranslate < 0) {
+  currentTranslate -= 200;  // Move os itens para a esquerda
+  document.querySelector('#skills-container').style.transform = `translateX(${currentTranslate}px)`;
+    }
+}
+
+function scrollLeft() {
+  currentTranslate += 200;  // Move os itens para a direita
+  document.querySelector('#skills-container').style.transform = `translateX(${currentTranslate}px)`;
+}
