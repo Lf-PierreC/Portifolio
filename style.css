@@ -27,10 +27,9 @@ body h1 {
     display: flex;
     gap: 50px;
     max-width: 80%;
-    /*overflow-x: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;*/
-    transition: transform 1s ease;
+
 }
 
 #skills p {
@@ -72,21 +71,16 @@ body h1 {
     display: flex;
 }
 
-.seta {
+.seta-esquerda {
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin: 70px;
 }
 
-#seta-esquerda, #seta-direita {
-    position: absolute;
-    z-index: 3;
-}
-
-#seta-esquerda {
-    left: 8%;
-}
-
-#seta-direita {
-    right: 8%;
+.seta-direita {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 70px;
 }

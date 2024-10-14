@@ -290,7 +290,6 @@ class skill {
 
 }
 
-//const seletorContainer = document.getElementById('skills-container');
 
 const skill1 = new skill('HTML',2.7,'icones/html.png');
 skill1.addSkill();
@@ -319,28 +318,14 @@ skill9.addSkill();
 const skill10 = new skill('CSS',4,'icones/CSS.png');
 skill10.addSkill();
 
-/*
+
 const skillsContainer = document.getElementById('skills-container');
-
-function scrollLeft() {
-  skillsContainer.scrollLeft -= 200;  // Ajuste o valor para controlar a distância do scroll
-}
+console.log(skillsContainer);
 
 function scrollRight() {
-  skillsContainer.scrollLeft += 200;
-}
-*/
-
-let currentTranslate = 0;
-
-function scrollRight() {
-    if (currentTranslate < 0) {
-  currentTranslate -= 200;  // Move os itens para a esquerda
-  document.querySelector('#skills-container').style.transform = `translateX(${currentTranslate}px)`;
-    }
+    skillsContainer.scrollBy({ left: 300, behavior: 'smooth' });
 }
 
-function scrollLeft() {
-  currentTranslate += 200;  // Move os itens para a direita
-  document.querySelector('#skills-container').style.transform = `translateX(${currentTranslate}px)`;
+function scrollToLeft() {
+    skillsContainer.scrollBy({ left: -300, behavior: 'smooth' });
 }
