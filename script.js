@@ -320,7 +320,6 @@ skill10.addSkill();
 
 
 const skillsContainer = document.getElementById('skills-container');
-console.log(skillsContainer);
 
 function scrollRight() {
     skillsContainer.scrollBy({ left: 300, behavior: 'smooth' });
