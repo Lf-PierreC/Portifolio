@@ -184,19 +184,33 @@ li{
     font-family: 'Abel', sans-serif;
     font-size: 20pt;
 }
-
 /* SKILLS */
-
-#skills {
+.section-title {
     color: white;
     text-align: center;
     padding-top: 250px;
     font-family: 'Anton', sans-serif;
+    font-size: 60pt;
+}
+
+
+#skills {
+    color: white;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
     font-size: 20pt;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 #skills-container{
     display: flex;
+    gap: 50px;
+    max-width: 80%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 
 #skills p {
@@ -209,6 +223,7 @@ li{
     width: 200px;
     margin: auto;
     padding-top: 50px;
+    scroll-snap-align: start;
 }
 
 .icon-skill {
@@ -217,6 +232,15 @@ li{
     background-color: white;
     border-radius: 50%;
     margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon {
+    width: 70%;
+    object-fit: cover;
+    padding-top: 13%;
+    scale: 0.75;
 }
 
 .estrela {
@@ -224,6 +248,20 @@ li{
     margin: auto;
 }
 
-#nivel {
+.nivel {
     display: flex;
+}
+
+.seta-esquerda {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 70px;
+}
+
+.seta-direita {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 70px;
 }
