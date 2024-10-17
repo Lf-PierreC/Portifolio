@@ -270,6 +270,28 @@ class skill {
         imgSkill.i
         iconSkill.appendChild(imgSkill);
 
+        if (this.nome === 'JavaScript') {
+            imgSkill.classList.add('js-icon'); // Adiciona classe 'js-icon' apenas para skill4
+        }
+        if (this.nome === 'Figma') {
+            imgSkill.classList.add('figma-icon'); // Adiciona classe 'js-icon' apenas para skill4
+        }
+        if (this.nome === 'PowerBI') {
+            imgSkill.classList.add('bi-icon'); // Adiciona classe 'js-icon' apenas para skill4
+        }
+        if (this.nome === 'UX Design') {
+            imgSkill.classList.add('ux-icon'); // Adiciona classe 'js-icon' apenas para skill4
+        }
+        if (this.nome === 'Photoshop') {
+            imgSkill.classList.add('ps-icon'); // Adiciona classe 'js-icon' apenas para skill4
+        }
+        if (this.nome === 'Illustrator') {
+            imgSkill.classList.add('il-icon'); // Adiciona classe 'js-icon' apenas para skill4
+        }
+        if (this.nome === 'SQL') {
+            imgSkill.classList.add('sql-icon'); // Adiciona classe 'js-icon' apenas para skill4
+        }
+
         const nomeSkill = document.createElement('p');
         nomeSkill.className = 'nome-skill';
         nomeSkill.textContent = this.nome;
@@ -291,31 +313,31 @@ class skill {
 }
 
 
-const skill1 = new skill('HTML',2.7,'icones/html.png');
+const skill1 = new skill('HTML',4,'icones/html.png');
 skill1.addSkill();
 
-const skill2 = new skill('CSS',4,'icones/CSS.png');
+const skill2 = new skill('CSS',3,'icones/CSS.png');
 skill2.addSkill();
 
-const skill4 = new skill('CSS',4,'icones/CSS.png');
+const skill3 = new skill('JavaScript',3,'icones/js.webp');
+skill3.addSkill();
+
+const skill4 = new skill('Figma',3.5,'icones/figma.png');
 skill4.addSkill();
 
-const skill5 = new skill('CSS',4,'icones/CSS.png');
+const skill5 = new skill('PowerBI',3.5,'icones/bi.png');
 skill5.addSkill();
 
-const skill6 = new skill('CSS',4,'icones/CSS.png');
-skill6.addSkill();
-
-const skill7 = new skill('CSS',4,'icones/CSS.png');
+const skill7 = new skill('UX Design',3,'icones/ux.png');
 skill7.addSkill();
 
-const skill8 = new skill('CSS',4,'icones/CSS.png');
+const skill8 = new skill('Photoshop',4,'icones/ps.png');
 skill8.addSkill();
 
-const skill9 = new skill('CSS',4,'icones/CSS.png');
+const skill9 = new skill('Illustrator',3.5,'icones/ilustrator.png');
 skill9.addSkill();
 
-const skill10 = new skill('CSS',4,'icones/CSS.png');
+const skill10 = new skill('SQL',3,'icones/sql.png');
 skill10.addSkill();
 
 

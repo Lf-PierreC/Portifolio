@@ -22,6 +22,24 @@ body {
     padding-bottom: 300px;
 }
 
+.header-section h1 {
+    color: white;
+    text-align: center;
+    padding-top: 250px;
+    font-family: 'Anton', sans-serif;
+    font-size: 60pt;
+}
+
+
+.icon-title{
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
 /* MENU */
 
 #home-icon {
@@ -37,18 +55,17 @@ body {
 }
 
 .menu {
-    list-style: none;
+    list-style: disc;
     display: flex;
     margin: auto;
 }
 
-li{
+.menu li{
     font: 'arial unicode';
     color: white;
     padding: 20px;
     display: flex;
     font-size: 15pt;
-    
 }
 
 /* HOME */
@@ -184,15 +201,8 @@ li{
     font-family: 'Abel', sans-serif;
     font-size: 20pt;
 }
-/* SKILLS */
-.section-title {
-    color: white;
-    text-align: center;
-    padding-top: 250px;
-    font-family: 'Anton', sans-serif;
-    font-size: 60pt;
-}
 
+/* SKILLS */
 
 #skills {
     color: white;
@@ -243,6 +253,42 @@ li{
     scale: 0.75;
 }
 
+.js-icon {
+    width: 80%;
+    scale:1;
+}
+
+.figma-icon {
+    width: 80%;
+    scale:1;
+}
+
+.bi-icon {
+    width: 80%;
+    scale:0.8;
+}
+
+.ux-icon {
+    width: 80%;
+    scale:0.8;
+}
+
+.ps-icon {
+    margin-top: 20px;
+    width: 100%;
+    scale:1;
+}
+
+.il-icon {
+    width: 80%;
+    scale:0.8;
+}
+
+.sql-icon {
+    width: 80%;
+    scale:0.8;
+}
+
 .estrela {
     padding-top: 15px;
     margin: auto;
@@ -265,3 +311,48 @@ li{
     cursor: pointer;
     margin: 70px;
 }
+
+
+/* EDUCATION */
+
+#education {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+#ed1{
+    grid-column: 1/2;
+    display: flex; 
+    padding-left: 20px;
+}
+
+#ed2 {
+    grid-column: 2 / 3;
+    display: flex; 
+    
+}
+
+.status-education {
+    list-style: disc;
+    
+}
+
+.status-education li{
+    font: 'arial unicode';
+    color: white;
+    padding: 20px;
+    font-size: 15pt;
+}
+
+/* PROJECTS */
+
+.project {
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border-radius: 5%;
+} 
