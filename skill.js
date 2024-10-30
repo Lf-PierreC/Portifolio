@@ -267,7 +267,6 @@ class skill {
         imgSkill.src = this.icone;
         imgSkill.alt = `${this.nome} Icon`;
         imgSkill.className = 'icon';
-        imgSkill.i
         iconSkill.appendChild(imgSkill);
 
         if (this.nome === 'JavaScript') {

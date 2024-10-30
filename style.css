@@ -66,6 +66,7 @@ body {
     padding: 20px;
     display: flex;
     font-size: 15pt;
+    cursor: pointer;
 }
 
 /* HOME */
@@ -363,6 +364,9 @@ body {
     margin-top: 100px;  
     padding: 15px;
     cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 70%;
 } 
 
 .project:hover {
@@ -376,16 +380,34 @@ body {
 } 
 
 
-#img-project {
-    width: 35%;
+.img-project {
+    width: 100%;
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
     background-color: #000000;
+    grid-row: 1/3;
 }
 
-#img-project img {
+.print-project {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.title-project {
+    grid-column: 2 / 3;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color: #E914C2;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    font-size: 40PX;
+}
+
+.descrition-project {
+    grid-column: 2 / 3;
+    text-align: center;
+    font-family: 'arial unicode';
+    
 }
