@@ -1,0 +1,433 @@
+@media(max-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        position: absolute;
+        z-index: 3;
+    }
+    
+    body {
+        font-family: arial;
+        background: radial-gradient(circle,#000000, #0F0022 );
+        margin: auto;
+        padding-bottom: 300px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .header-section h1 {
+        color: white;
+        text-align: center;
+        padding-top: 120px;
+        font-family: 'Anton', sans-serif;
+        font-size: 35pt;
+    }
+    
+    #skill-section{
+        padding-top: 100px;
+    }
+
+    .icon-title{
+        position: absolute;
+        margin-top: 140px;
+        margin-left: 20px;
+        width: 25px;
+        height: 25px;
+        color: white;
+    }
+
+    /* MENU */
+
+    #home-icon {
+        position: absolute;
+        margin: 20px;
+        margin-top: 50px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 85px;
+    }
+
+    .menu {
+        list-style: disc;
+        display: flex;
+        margin: auto;
+        border-radius: 0px 0px 15px 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 0;
+        padding-bottom: 5px;
+    }
+
+    .menu li{
+        font: 'arial unicode';
+        color: white;
+        padding: 10px;
+        padding-bottom: 5px;
+        display: flex;
+        font-size: 12pt;
+        cursor: pointer;
+    }
+
+    .menu li:hover{
+        margin-top: 5px;
+        padding-bottom: 0px;
+        transition: 0.5s;
+    }
+
+    .menu li:not(:hover){
+        transition: 0.5s;
+    }
+
+    /* HOME */
+
+    #home {
+        padding-top: 50px;
+        height: 400px;
+        color: white;
+        text-align: center;
+        display: block;
+    }
+
+
+    #foto-perfil {
+        perspective: 0px;
+        position: relative;
+    }
+
+    #foto-perfil:hover #circulo-01{
+        transition: transform 0.5s;
+    }
+
+    #foto-perfil:hover #circulo-02{
+        transition: transform 0.75s;
+    }
+
+    #foto-perfil:hover #circulo-03{
+        transition: transform 1s;
+    }
+
+    #foto-perfil:not(:hover) #circulo-01{
+        transition: transform 1s;
+    }
+
+    #foto-perfil:not(:hover) #circulo-02{
+        transition: transform 0.75s;
+    }
+
+    #foto-perfil:not(:hover) #circulo-03{
+        transition: transform 0.5s;
+    }
+
+
+    .circulo {
+        position: absolute;
+    }
+
+    #foto-perfil:hover #circulo-01{
+        transform: translateY(30px) translateX(20px);
+    }
+
+    #foto-perfil:hover #circulo-02{
+        transform: translateY(30px) translateX(20px);
+    }
+
+    #foto-perfil:hover #circulo-03{
+        transform: translateY(30px) translateX(20px);
+    }
+
+    #foto-perfil:not(:hover) #circulo-01{
+        transform: translateY(0px) translateX(0px);
+    }
+
+    #foto-perfil:not(:hover) #circulo-02{
+        transform: translateY(0px) translateX(0px);
+    }
+
+    #foto-perfil:not(:hover) #circulo-03{
+        transform: translateY(0px) translateX(0px);
+    }
+
+    #circulo-01 {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: 30%;
+        margin-top: 40px;
+        box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    #circulo-01 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #circulo-02 {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin-left: 25%;
+        margin-top: 30px;
+        background: -webkit-radial-gradient(circle,#AC1A80,#BD00C0);
+        box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    #circulo-03 {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin-left: 20%;
+        margin-top: 22px;
+        background-color: white;
+        box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    #texto {
+        margin: auto 0px auto 0px;
+    }
+
+    #texto h1 {
+        text-align: center;
+        font-family: 'Anton', sans-serif;
+        font-size: 35pt;
+        background: linear-gradient(97deg, #BD00C0, #E914C2, #F555E9, #BD00C0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        margin-top: 300px;
+    }
+
+    #texto p {
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    #texto {
+        text-align: center;
+        font-family: 'Abel', sans-serif;
+        font-size: 15pt;
+    }
+
+    /* SKILLS */
+
+    #skills {
+        color: white;
+        text-align: center;
+        font-family: 'Anton', sans-serif;
+        font-size: 20pt;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #skills-container{
+        display: flex;
+        gap: 150px;
+        max-width: 80%;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch
+    }
+
+    #skills p {
+        font-family: 'arial unicode', sans-serif;
+        font-size: 18pt;
+        padding-top: 10px;
+        width: 160px;
+    }
+
+
+    .skill {
+        width: 80px;
+        margin: auto;
+        padding-top: 50px;
+        scroll-snap-align: start;
+        text-align: center;
+    }
+
+    .icon-skill {
+        width: 160px;
+        height: 160px;
+        background-color: white;
+        border-radius: 50%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .icon {
+        width: 70%;
+        object-fit: cover;
+        padding-top: 13%;
+        scale: 0.75;
+    }
+
+    .js-icon {
+        width: 80%;
+        scale:1;
+    }
+
+    .figma-icon {
+        width: 80%;
+        scale:1;
+    }
+
+    .bi-icon {
+        width: 80%;
+        scale:0.8;
+    }
+
+    .ux-icon {
+        width: 80%;
+        scale:0.8;
+    }
+
+    .ps-icon {
+        margin-top: 20px;
+        width: 100%;
+        scale:1;
+    }
+
+    .il-icon {
+        width: 80%;
+        scale:0.8;
+    }
+
+    .sql-icon {
+        width: 80%;
+        scale:0.8;
+    }
+
+    .estrela {
+        padding-top: 15px;
+        margin: auto;
+    }
+
+    .nivel {
+        display: flex;
+    }
+
+    .seta-esquerda {
+        display: none;
+        align-items: center;
+        cursor: pointer;
+        margin: 70px;
+    }
+
+    .seta-direita {
+        display: none;
+        align-items: center;
+        cursor: pointer;
+        margin: 70px;
+    }
+
+    .nivel {
+        display: flex;
+        width: 160px;
+    }
+    
+    /* EDUCATION */
+
+    #education {
+        display: block;
+        justify-items: center;
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #ed1{
+        display: flex; 
+        padding-left: 0px;
+    }
+
+    #ed2 {
+        display: flex; 
+        
+    }
+
+    .status-education {
+        list-style: disc;
+        
+    }
+
+    .status-education li{
+        font: 'arial unicode';
+        color: white;
+        padding: 20px;
+        font-size: 15pt;
+    }
+
+    /* PROJECTS */
+
+    #Projects {
+        width: 100%;
+    }
+
+    .project {
+        max-width: 95%;
+        height: 400px;
+        background-color: white;
+        border-radius: 15px;
+        margin: auto;
+        margin-top: 100px;  
+        padding: 15px;
+        cursor: pointer;
+        display: block;
+    } 
+
+    .project:hover {
+        max-width: 100%;
+        height: 420px;
+        transition: 0.5s;
+    } 
+
+    .project:not(:hover) {
+        transition: 0.5s;
+    } 
+
+    .img-project {
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #000000;
+    }
+
+
+    .print-project {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .title-project {
+        font-family: 'Anton', sans-serif;
+        text-align: center;
+        color: #E914C2;
+        letter-spacing: 5px;
+        margin-top: 10px;
+        font-size: 30PX;
+    }
+
+    .descrition-project {
+        text-align: center;
+        font-family: 'arial unicode';
+    }
+}

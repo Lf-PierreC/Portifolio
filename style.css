@@ -14,12 +14,20 @@
     box-sizing: border-box;
 }
 
+header {
+    position: absolute;
+    z-index: 3;
+}
 
 body {
     font-family: arial;
     background: radial-gradient(circle,#000000, #0F0022 );
     margin: auto;
     padding-bottom: 300px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .header-section h1 {
@@ -49,6 +57,8 @@ body {
 
 .navbar {
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     height: 85px;
@@ -58,15 +68,30 @@ body {
     list-style: disc;
     display: flex;
     margin: auto;
+    border-radius: 0px 0px 25px 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+    padding-bottom: 10px;
 }
 
 .menu li{
     font: 'arial unicode';
     color: white;
     padding: 20px;
+    padding-bottom: 10px;
     display: flex;
     font-size: 15pt;
     cursor: pointer;
+}
+
+.menu li:hover{
+    margin-top: 5px;
+    padding-bottom: 0px;
+    transition: 0.5s;
+}
+
+.menu li:not(:hover){
+    transition: 0.5s;
 }
 
 /* HOME */
@@ -84,7 +109,7 @@ body {
 #foto-perfil {
     grid-column: 1/1;
     perspective: 1000px;
-
+    position: relative;
 }
 
 #foto-perfil:hover #circulo-01{
@@ -114,7 +139,6 @@ body {
 
 .circulo {
     position: absolute;
-    
 }
 
 #foto-perfil:hover #circulo-01{
@@ -228,6 +252,7 @@ body {
     font-family: 'arial unicode', sans-serif;
     font-size: 18pt;
     padding-top: 10px;
+    width: 200px;
 }
 
 .skill {
@@ -297,6 +322,7 @@ body {
 
 .nivel {
     display: flex;
+    width: 200px;
 }
 
 .seta-esquerda {

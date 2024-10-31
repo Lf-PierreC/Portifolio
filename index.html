@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyProfile</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
 </head>
 <body>
     <header>
@@ -13,11 +14,11 @@
         </svg>
         <nav class="navbar">
             <ul class="menu">
-                <li>HOME</li>
-                <li>SKILLS</li>
-                <li>EDUCATION</li>
-                <li>PROJECTS</li>
-                <li>CONTACT</li>
+                <a href="#home"><li>HOME</li></a>
+                <a href="#skill-section"><li>SKILLS</li></a>
+                <a href="#education-section"><li>EDUCATION</li></a>
+                <a href="#project-title"><li>PROJECTS</li></a>
+                <a href="#contact-section"><li>CONTACT</li></a>
             </ul>
         </nav>
     </header>
@@ -30,12 +31,12 @@
             </div>
         </div>
         <div id="texto">
-        <h1>FRONT-END DEV</h1>
-        <p>Olá! Meu nome é Luiz Felipe Pierre de Carvalho e tenho 20 anos. Sou desenvolvedor front-end e web designer, com conhecimentos em análise de dados.</p>
+            <h1>FRONT-END DEV</h1>
+            <p>Olá! Meu nome é Luiz Felipe Pierre de Carvalho e tenho 20 anos. Sou desenvolvedor front-end e web designer, com conhecimentos em análise de dados.</p>
         </div>
     </div>
 
-    <div class="header-section">
+    <div class="header-section" id="skill-section">
         <svg class="icon-title" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-bullseye" viewBox="0 0 16 16">
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
             <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
@@ -61,7 +62,7 @@
         </div>
     </div>
 
-    <div class="header-section">
+    <div class="header-section" id="education-section">
         <svg class="icon-title" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backpack2-fill" viewBox="0 0 16 16">
             <path d="M5 13h6v-3h-1v.5a.5.5 0 0 1-1 0V10H5z"/>
             <path d="M6 2v.341C3.67 3.165 2 5.388 2 8v1.191l-1.17.585A1.5 1.5 0 0 0 0 11.118V13.5A1.5 1.5 0 0 0 1.5 15h1c.456.607 1.182 1 2 1h7c.818 0 1.544-.393 2-1h1a1.5 1.5 0 0 0 1.5-1.5v-2.382a1.5 1.5 0 0 0-.83-1.342L14 9.191V8a6 6 0 0 0-4-5.659V2a2 2 0 1 0-4 0m2-1a1 1 0 0 1 1 1v.083a6 6 0 0 0-2 0V2a1 1 0 0 1 1-1m0 3a4 4 0 0 1 3.96 3.43.5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14A4 4 0 0 1 8 4M4.5 9h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5"/>
@@ -99,7 +100,9 @@
     <div id="projects">
         
     </div>
-
+    <div class="header-section" id="contact-section">
+        <h1>CONTATO</h1>
+    </div>
 </body>
 <script src="skill.js"></script>
 <script src="projects.js"></script>
