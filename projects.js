@@ -21,17 +21,21 @@ class project {
         imgSrc.className = 'print-project'
         imgProject.appendChild(imgSrc);
 
+        const textosProject = document.createElement('div');
+        textosProject.className = 'textos-project';
+
         const tituloProject = document.createElement('h1');
         tituloProject.className = 'title-project';
         tituloProject.textContent = this.titulo;
+        textosProject.appendChild(tituloProject);
 
         const descricaoProject = document.createElement('p');
         descricaoProject.className = 'descrition-project';
         descricaoProject.textContent = this.descricao;
+        textosProject.appendChild(descricaoProject);
         
         projectContainer.appendChild(imgProject);
-        projectContainer.appendChild(tituloProject);
-        projectContainer.appendChild(descricaoProject);
+        projectContainer.appendChild(textosProject);
 
         return projectContainer;
     }
@@ -52,8 +56,8 @@ class project {
 }
 
 
-const project1 = new project('PORTIFOLIO', 'teste', 'imagens/print-portifolio.png','https://luizmyprofile.netlify.app/');
+const project1 = new project('PORTIFOLIO', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, necessitatibus in fugit quibusdam, quia laboriosam quas reiciendis tenetur officia quod illum ex ipsum perspiciatis. Porro rem ad sequi assumenda quo.', 'imagens/print-portifolio.png','https://luizmyprofile.netlify.app/');
 project1.addProjeto();
-const project2 = new project('SPORTLINES', 'teste', 'imagens/print-sportlines.png','https://sportlines.netlify.app/');
+const project2 = new project('SPORTLINES', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, necessitatibus in fugit quibusdam, quia laboriosam quas reiciendis tenetur officia quod illum ex ipsum perspiciatis. Porro rem ad sequi assumenda quo.', 'imagens/print-sportlines.png','https://sportlines.netlify.app/');
 project2.addProjeto();
 

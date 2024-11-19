@@ -13,7 +13,7 @@
     
     body {
         font-family: arial;
-        background: radial-gradient(circle,#000000, #0F0022 );
+        background: radial-gradient(circle,#000000, #252525 );
         margin: auto;
         padding-bottom: 300px;
     }
@@ -75,10 +75,10 @@
     .menu li{
         font: 'arial unicode';
         color: white;
-        padding: 10px;
+        padding: 10px 5px;
         padding-bottom: 5px;
         display: flex;
-        font-size: 12pt;
+        font-size: 8pt;
         cursor: pointer;
     }
 
@@ -106,6 +106,7 @@
     #foto-perfil {
         perspective: 0px;
         position: relative;
+        margin: auto;
     }
 
     #foto-perfil:hover #circulo-01{

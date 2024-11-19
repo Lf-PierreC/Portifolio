@@ -8,6 +8,30 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Telegraf Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fontes/TelegrafRegular_272984568a25d8528fe2de8b20b29011.otf);
+    
+}
+    
+
+@font-face {
+    font-family: 'Telegraf UltraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fontes/Telegraf\ UltraLight\ 200.otf);
+}
+    
+
+@font-face {
+    font-family: 'Telegraf UltraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fontes/Telegraf\ UltraBold\ 800.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,9 +45,8 @@ header {
 
 body {
     font-family: arial;
-    background: radial-gradient(circle,#000000, #0F0022 );
+    background: #060225;
     margin: auto;
-    padding-bottom: 300px;
 }
 
 a {
@@ -33,15 +56,16 @@ a {
 .header-section h1 {
     color: white;
     text-align: center;
-    padding-top: 250px;
-    font-family: 'Anton', sans-serif;
+    padding-top: 50px;
+    font-family: 'Telegraf UltraBold';
     font-size: 60pt;
+    letter-spacing: 8px;
+    padding-bottom: 0px;
 }
-
 
 .icon-title{
     position: absolute;
-    margin-top: 290px;
+    margin-top: 20px;
     margin-left: 20px;
     width: 40px;
     height: 40px;
@@ -50,14 +74,10 @@ a {
 
 /* MENU */
 
-#home-icon {
-    position: absolute;
-    margin: 20px;
-}
-
 .navbar {
     display: flex;
     position: fixed;
+    top: 0;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -68,9 +88,11 @@ a {
     list-style: disc;
     display: flex;
     margin: auto;
+    margin-top: 0;
     border-radius: 0px 0px 25px 25px;
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 0;
+    backdrop-filter: blur(10px);           
+    -webkit-backdrop-filter: blur(10px); 
     padding-bottom: 10px;
 }
 
@@ -82,6 +104,7 @@ a {
     display: flex;
     font-size: 15pt;
     cursor: pointer;
+    top: 0;
 }
 
 .menu li:hover{
@@ -96,13 +119,29 @@ a {
 
 /* HOME */
 
+#home-icon {
+    position: absolute;
+    margin: 0;
+    top: 20px;
+    left: 20px; 
+    fill: #b3b1c4;
+}
+
 #home {
-    padding-top: 100px;
+    margin: auto;
+    margin-top: 100px;
+    width: 95%;
+    border-radius: 30px;
     display: grid;
     grid-template-columns: 40% 60%;
-    height: 400px;
+    height: 700px;
     color: white;
     text-align: center;
+    background: linear-gradient(45deg, rgba(75, 75, 75, 0.479) 0%, rgba(189, 189, 189, 0.411) 50%, rgba(75, 75, 75, 0.479) 100%);
+    backdrop-filter: blur(100px);           
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(73, 73, 73, 0.082); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -166,12 +205,12 @@ a {
 }
 
 #circulo-01 {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     overflow: hidden;
     margin-left: 35%;
-    margin-top: 75px;
+    margin-top: 20%;
     box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -182,21 +221,21 @@ a {
 }
 
 #circulo-02 {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     margin-left: 30%;
     margin-top: 60px;
-    background: -webkit-radial-gradient(circle,#AC1A80,#BD00C0);
+    background: linear-gradient(45deg, #c3003b 100px,#BD00C0 200px , #301aac 500px);
     box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 #circulo-03 {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
-    margin-left: 25%;
-    margin-top: 45px;
+    margin-left: 20%;
+    margin-top: 18%;
     background-color: white;
     box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
 }
@@ -210,9 +249,10 @@ a {
     text-align: left;
     font-family: 'Anton', sans-serif;
     font-size: 60pt;
-    background: linear-gradient(97deg, #BD00C0, #E914C2, #F555E9, #BD00C0);
+    background: white   ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
     background-clip: text;
     color: transparent;
 }
@@ -229,6 +269,25 @@ a {
 
 /* SKILLS */
 
+#section-container-skills {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 250px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #301aac;
+}
+
+#texto-skills-section{
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+#skill-icon {
+    margin-left: 60px;
+}
+
 #skills {
     color: white;
     text-align: center;
@@ -242,7 +301,7 @@ a {
 #skills-container{
     display: flex;
     gap: 50px;
-    max-width: 80%;
+    max-width: 90%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 
@@ -318,6 +377,7 @@ a {
 .estrela {
     padding-top: 15px;
     margin: auto;
+    fill: white;  
 }
 
 .nivel {
@@ -332,6 +392,11 @@ a {
     margin: 70px;
 }
 
+.seta-esquerda img {
+    width: 50px;
+    height: 50px;
+}
+
 .seta-direita {
     display: flex;
     align-items: center;
@@ -339,14 +404,35 @@ a {
     margin: 70px;
 }
 
+.seta-direita img {
+    width: 50px;
+    height: 50px;
+}
+
 
 /* EDUCATION */
 
+#education-section {
+    width: 95%;
+    margin: auto;
+    margin-top: 250px;
+    padding-bottom: 100px;
+    height: 700px;
+}
+
+#education-section h1 {
+    text-align: left;
+    font-size: 180px;
+    margin: auto;
+    letter-spacing: 20px;
+}
+
 #education {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 55%;
+    gap: 50px;
     justify-items: center;
-    width: 60%;
+    width: 100%;
     margin: auto;
     margin-top: 70px;
 }
@@ -355,49 +441,70 @@ a {
     grid-column: 1/2;
     display: flex; 
     padding-left: 20px;
+    background: linear-gradient(45deg, #c3003b 100px,#BD00C0 500px , #301aac 1000px);
+    border-radius: 30px;
+    width: 100%;
 }
 
 #ed2 {
     grid-column: 2 / 3;
     display: flex; 
-    
+    padding-top: 5%;
+    padding-left: 60px;
+    max-width: 100%;
 }
 
 .status-education {
     list-style: disc;
-    
+    margin: auto;
 }
 
 .status-education li{
     font: 'arial unicode';
     color: white;
-    padding: 20px;
+    padding: 40px;
+    padding-left: 20px;
     font-size: 15pt;
+    margin: auto;
 }
 
 /* PROJECTS */
+
+#project-title {
+    width: 95%;
+    margin: auto;
+}
+
+#project-title h1 {
+    margin-top: 250px;
+    padding-top: 0px;
+}
 
 #Projects {
     width: 100%;
 }
 
 .project {
-    max-width: 1300px;
-    height: 450px;
-    background-color: white;
+    max-width: 1450px;
+    height: 500px;
+    background: linear-gradient(45deg, rgba(116, 115, 115, 0.479) 0%, rgba(189, 189, 189, 0.411) 50%, rgba(109, 108, 108, 0.479) 100%);
+    backdrop-filter: blur(100px);           
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(73, 73, 73, 0.082); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     margin: auto;
     margin-top: 100px;  
     padding: 15px;
     cursor: pointer;
     display: grid;
+    justify-content: center;
+    align-content: center;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30% 70%;
 } 
 
 .project:hover {
-    max-width: 1400px;
-    height: 500px;
+    max-width: 1500px;
     transition: 0.5s;
 } 
 
@@ -408,11 +515,10 @@ a {
 
 .img-project {
     width: 100%;
-    height: 100%;
+    height: 425px;
     border-radius: 10px;
     overflow: hidden;
     background-color: #000000;
-    grid-row: 1/3;
 }
 
 .print-project {
@@ -421,19 +527,79 @@ a {
     object-fit: cover;
 }
 
+.textos-project {
+    grid-column: 2/3;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
 .title-project {
-    grid-column: 2 / 3;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Telegraf UltraBold';
     text-align: center;
-    color: #E914C2;
+    color: white;
     letter-spacing: 5px;
-    margin-top: 30px;
-    font-size: 40PX;
+    font-size: 40px;
+    margin-bottom: 50px;
 }
 
 .descrition-project {
-    grid-column: 2 / 3;
     text-align: center;
     font-family: 'arial unicode';
-    
+    color: white;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+/* CONTATO */
+
+#contact-section{
+    margin-top: 250px;
+}
+
+#contato {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 30px 30px 0px 0px ;
+    background: linear-gradient(45deg, rgba(48, 47, 47, 0.479) 0%, rgba(77, 77, 77, 0.411) 50%, rgba(65, 64, 64, 0.479) 100%);
+    backdrop-filter: blur(10px);           
+    -webkit-backdrop-filter: blur(10px);
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+#icones-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icones-footer svg {
+    margin: 50px;
+}
+
+#icones-footer svg:hover{
+    width: 220px;
+    height: 220px;
+    margin: 30px;
+    transition: 0.5s;
+}
+
+#icones-footer svg:not(:hover){
+    transition: 0.5s;
+}
+
+#texto-footer {
+    margin-top: 50px;
+}
+
+#texto-footer p {
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
