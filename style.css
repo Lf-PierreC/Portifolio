@@ -96,6 +96,10 @@ a {
     padding-bottom: 10px;
 }
 
+#menu-icon {
+    display: none;
+}
+
 .menu li{
     font: 'arial unicode';
     color: white;
@@ -341,6 +345,10 @@ a {
 .js-icon {
     width: 80%;
     scale:1;
+}
+
+.react-icon {
+    width: 90%;
 }
 
 .figma-icon {

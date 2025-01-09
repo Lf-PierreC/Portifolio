@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <ul class="menu">
                 <a href="#home"><li>HOME</li></a>
                 <a href="#skill-section"><li>SKILLS</li></a>
@@ -17,6 +17,11 @@
                 <a href="#project-title"><li>PROJECTS</li></a>
                 <a href="#contact-section"><li>CONTACT</li></a>
             </ul>
+            <div id="menu-icon" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </div>
         </nav>
     </header>
 
@@ -33,7 +38,7 @@
         </div>
         <div id="texto">
             <h1>FRONT-END DEV</h1>
-            <p>Olá! Meu nome é Luiz Felipe Pierre de Carvalho e tenho 20 anos. Sou desenvolvedor front-end e web designer, com conhecimentos em análise de dados.</p>
+            <p>Olá! Meu nome é Luiz Felipe Pierre de Carvalho e tenho 20 anos. <br>Sou desenvolvedor front-end, web designer e ingressante em análise de dados.</p>
         </div>
     </div>
 
@@ -59,7 +64,7 @@
             <img src="icones/arrow-direita.svg" alt="seta-direita">
         </div>
     </div>
-    <p id="texto-skills-section">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum necessitatibus odio vero ratione, vitae non rem libero laboriosam facere minus tempora incidunt ad porro exercitationem similique tempore. Quasi, odit ad.</p>
+    <p id="texto-skills-section">Cada estrela representa o nível de conhecimento individual se comparado com as demais habilidades</p>
     </div>
 
     <div class="header-section" id="education-section">
@@ -123,5 +128,6 @@
     </footer>
 </body>
 <script src="skill.js"></script>
+<script src="toggleMenu.js"></script>
 <script src="projects.js"></script>
 </html>
