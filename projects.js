@@ -58,7 +58,7 @@ class project {
 
 const project1 = new project('PORTIFOLIO', 'Meu portifólio foi o primeiro porjeto que realizei e que permanece desde então em constante aprimoramento', 'imagens/print-portifolio.png','https://luizmyprofile.netlify.app/');
 project1.addProjeto();
-const project2 = new project('SPORTLINES', 'A Sportlines é uma empresa que está iniciando suas atividades no mercado esportivo, e solicitou que criasse uma pagina para poderem divulgar seu produto principal', 'imagens/print-sportlines.png','https://sportlines.netlify.app/');
+const project2 = new project('SPORTLINES', 'A Sportlines é uma empresa que está iniciando suas atividades no mercado esportivo, e solicitou que criasse uma logo nova para ele e uma página para poderem divulgar seu produto principal', 'imagens/print-sportlines.png','https://sportlines.netlify.app/');
 project2.addProjeto();
 const project3 = new project('GIFT LIST', 'Este projeto foi um pedido de um casal de amigos que precisavam criar a sua lista de presente de casamento, decidi então ajudá-los com este projeto para poder adicionar tambem em meu portifólio', 'imagens/print-giftList.jpg','https://weddinggiftlist.netlify.app/');
 project3.addProjeto();
