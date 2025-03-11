@@ -43,6 +43,10 @@ header {
     z-index: 3;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: arial;
     background: #060225;
@@ -152,7 +156,6 @@ a {
 #foto-perfil {
     grid-column: 1/1;
     perspective: 1000px;
-    position: relative;
 }
 
 #foto-perfil:hover #circulo-01{
@@ -209,12 +212,12 @@ a {
 }
 
 #circulo-01 {
-    width: 400px;
-    height: 400px;
+    width: 25em;
+    height: 25em;
     border-radius: 50%;
     overflow: hidden;
-    margin-left: 35%;
-    margin-top: 20%;
+    margin-left: 10em;
+    margin-top: 8em;
     box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -225,28 +228,28 @@ a {
 }
 
 #circulo-02 {
-    width: 400px;
-    height: 400px;
+    width: 25em;
+    height: 25em;
     border-radius: 50%;
-    margin-left: 30%;
-    margin-top: 60px;
+    margin-left: 9em;
+    margin-top: 5em;
     background: linear-gradient(45deg, #c3003b 100px,#BD00C0 200px , #301aac 500px);
     box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 #circulo-03 {
-    width: 400px;
-    height: 400px;
+    width: 25em;
+    height: 25em;
     border-radius: 50%;
-    margin-left: 20%;
-    margin-top: 18%;
+    margin-left: 7em;
+    margin-top: 8em;
     background-color: white;
     box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 #texto {
-    grid-column: 2/2;
     margin: auto 0px auto 0px;
+    padding-left: 2em;
 }
 
 #texto h1 {
@@ -397,7 +400,7 @@ a {
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin: 70px;
+    margin: 1em;
 }
 
 .seta-esquerda img {
@@ -409,7 +412,7 @@ a {
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin: 70px;
+    margin: 1em;
 }
 
 .seta-direita img {
@@ -493,7 +496,7 @@ a {
 }
 
 .project {
-    max-width: 1450px;
+    width: 80%;
     height: 500px;
     background: linear-gradient(45deg, rgba(116, 115, 115, 0.479) 0%, rgba(189, 189, 189, 0.411) 50%, rgba(109, 108, 108, 0.479) 100%);
     backdrop-filter: blur(100px);           
@@ -512,7 +515,7 @@ a {
 } 
 
 .project:hover {
-    max-width: 1500px;
+    width: 85%;
     transition: 0.5s;
 } 
 
